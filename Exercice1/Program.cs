@@ -10,7 +10,7 @@ namespace Exercice1
     {
         static void Main(string[] args)
         {
-            string Nom = "Sylvain";
+            string Nom = "Sylvain Torrenti";
             Console.WriteLine("Bonjour " + Nom);
 
             Console.ReadLine();
