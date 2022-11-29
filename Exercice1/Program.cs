@@ -11,7 +11,9 @@ namespace Exercice1
         static void Main(string[] args)
         {
             string Nom = "Sylvain Torrenti";
-            Console.WriteLine("Bonjour " + Nom);
+            int age = 32;
+            Console.WriteLine("Bonjour " + Nom + " tu as " + age + " ans");
+
 
             Console.ReadLine();
         }

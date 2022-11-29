@@ -12,7 +12,9 @@ namespace Exercice1_1
         {
             Console.WriteLine("Entrez votre nom:");
             string nom = Console.ReadLine();
-            Console.WriteLine("bonjour " + nom);
+            Console.WriteLine("Entrez votre age:");
+            string age = Console.ReadLine();
+            Console.WriteLine("bonjour " + nom + " tu as " + age + " ans");
 
             Console.ReadLine();
         }
