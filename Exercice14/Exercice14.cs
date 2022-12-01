@@ -10,9 +10,9 @@ namespace Exercice14
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Entré le nombre de photocopie faites");
-            string Photocopie = Console.ReadLine();
-            int PhotocopieConvertit = int.Parse(Photocopie);
+            Console.WriteLine("Entrez le nombre de photocopies faites");
+            string NbPhotocopies = Console.ReadLine();
+            int PhotocopieConvertit = int.Parse(NbPhotocopies);
             if (PhotocopieConvertit <= 10)
             {
                 double PremierPrix = PhotocopieConvertit * 0.1;
