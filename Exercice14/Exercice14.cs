@@ -11,33 +11,28 @@ namespace Exercice14
         static void Main(string[] args)
         {
             Console.WriteLine("Entrez le nombre de photocopies faites");
-            string NbPhotocopies = Console.ReadLine();
-            int PhotocopieConvertit = int.Parse(NbPhotocopies);
-            if (PhotocopieConvertit <= 10)
+            int NbPhotocopies = int.Parse(Console.ReadLine()); //Stock le nombre de photocopie
+            double Prix1 = 1; // donne le prix des 10 premiére photocopies
+            double Prix2 = 1.9; // donne le prix des 10 suivantes
+
+            if (NbPhotocopies <= 10) // verifie si le nombre de photocopie est <= 10
             {
-                double PremierPrix = PhotocopieConvertit * 0.1;
+                double PremierPrix = NbPhotocopies * 0.1; // calcul le prix des photocpies
                 Console.WriteLine("la facture est de " + PremierPrix);
 
             }
-
-
-            if ((PhotocopieConvertit > 10) && (PhotocopieConvertit <= 20))
+            if ((NbPhotocopies > 10) && (NbPhotocopies <= 20)) // verifie si le nombre de photocopie est entre 10 et 20
             {
-                int PhotocopieDeux = PhotocopieConvertit - 10;
-                double DeuxiemePrix = (PhotocopieDeux * 0.09) + 1;
+                int PhotocopieDeux = NbPhotocopies - 10; // enléve les 10 premiére photocopies
+                double DeuxiemePrix = (PhotocopieDeux * 0.09) + Prix1; // calcul le prix des photocopie comprisent entre 10 et 20 et ajoute le prix des 10 premiéres
                 Console.WriteLine("La facture est de " + DeuxiemePrix);
             }
-            if (PhotocopieConvertit > 20)
+            if (NbPhotocopies > 20) // verifie si le nombre de photocopie est > 20
             {
-                int PhotocopieTrois = PhotocopieConvertit - 20;
-                double Troisiemeprix = (PhotocopieTrois * 0.08) + 1.9;
+                int PhotocopieTrois = NbPhotocopies - 20; // enléve les 20 premiére photocopies
+                double Troisiemeprix = (PhotocopieTrois * 0.08) + Prix2; // calcul le prix des photocopie superieur à 20 et ajoute le prix des 20 premiéres
                 Console.WriteLine("La facture est de " + Troisiemeprix);
             }
-
-
-
-
-
 
             Console.ReadLine();
         }
