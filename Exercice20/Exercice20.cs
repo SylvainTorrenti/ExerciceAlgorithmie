@@ -21,12 +21,12 @@ namespace Exercice20
                 }
                 Console.WriteLine("La somme est de " + Somme);
             }
-            
-                Console.WriteLine("Voulez vous fair un nouveau calcul? O/N");
-                string Reponse = Console.ReadLine();
-            
 
-            while (Reponse == "O")
+            Console.WriteLine("Voulez vous fair un nouveau calcul? O/N"); // Demande à l'utilisateur si il veut faire un autre calcul
+            string Reponse = Console.ReadLine();
+
+
+            while (Reponse == "O") // tant que la réponse est "O"
             {
                 Console.WriteLine("Entrez un nombre");
                 int Nombre = int.Parse(Console.ReadLine());
@@ -36,11 +36,11 @@ namespace Exercice20
                     Somme = Nombre + Somme; // caclcule la somme avec la valeur du nombre actuel + la somme actuelle
                     Nombre = Nombre - 1; // enlêve 1 au nombrea actuel
                 }
-                {
-                    Console.WriteLine("La somme est de " + Somme);
-                    Console.WriteLine("Voulez vous fair un nouveau calcul? O/N");
-                    Reponse = Console.ReadLine();
-                }
+
+                Console.WriteLine("La somme est de " + Somme);
+                Console.WriteLine("Voulez vous fair un nouveau calcul? O/N");// Demande à l'utilisateur si il veut faire un autre calcul
+                Reponse = Console.ReadLine();
+
 
 
 
