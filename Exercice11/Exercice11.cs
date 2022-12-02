@@ -11,15 +11,19 @@ namespace Exercice11
         static void Main(string[] args)
         {
             Console.WriteLine("Ecrivez un caractére");
-            string caractere = Console.ReadLine();
-            if ((caractere == "o") || (caractere == "O"))
+            string caractere = Console.ReadLine(); // stock le caractére
+            if ((caractere == "o") || (caractere == "O")) // verifie si le caractére est "o" ou "O"
             {
                 Console.WriteLine("affirmatif");
 
-            }
-            if ((caractere == "n") || (caractere == "N"))
+            } 
+            else if ((caractere == "n") || (caractere == "N")) // verifie si le caractére est "n" ou "N"
             {
                 Console.WriteLine("négatif");
+            }
+            else // si les autres condition ne se verifie pas
+            {
+                Console.WriteLine("???");
             }
             
 

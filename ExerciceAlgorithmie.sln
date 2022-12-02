@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice08", "Exercice8\Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice09", "Exercice9\Exercice09.csproj", "{C95965FA-8A4A-472F-8B1B-11FDFDABFE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice10(a finir)", "Exercice10\Exercice10(a finir).csproj", "{8E10DA3A-7230-41F5-B169-91A6371DA1A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice10", "Exercice10\Exercice10.csproj", "{8E10DA3A-7230-41F5-B169-91A6371DA1A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice11(a finir)", "Exercice11\Exercice11(a finir).csproj", "{2DFCB9C6-7DE6-4197-B699-5D4C16B5A431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice11", "Exercice11\Exercice11.csproj", "{2DFCB9C6-7DE6-4197-B699-5D4C16B5A431}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice12", "Exercice12\Exercice12.csproj", "{F14656FB-4B48-4696-8629-9C083691855E}"
 EndProject
