@@ -10,9 +10,9 @@ namespace Exercice1
     {
         static void Main(string[] args)
         {
-            string Nom = "Sylvain Torrenti";
-            int age = 32;
-            Console.WriteLine("Bonjour " + Nom + " tu as " + age + " ans");
+            string Nom = "Sylvain Torrenti"; //stock le nom
+            int age = 32; // stock l'age
+            Console.WriteLine("Bonjour " + Nom + " tu as " + age + " ans"); // affiche le nom et l'âge
 
 
             Console.ReadLine();
