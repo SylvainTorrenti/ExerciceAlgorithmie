@@ -23,8 +23,8 @@ namespace Exercice20_1
                 Console.WriteLine("La somme est de " + Resultat);
 
                 Console.WriteLine("Voulez vous faire un autre calcule? (O/N)");
-                Reponse= System.Console.ReadLine();
-                
+                Reponse = System.Console.ReadLine();
+
             }
         }
 
@@ -32,10 +32,12 @@ namespace Exercice20_1
         {
 
 
-            if (Nombre == 1) //si le nombre = 1
+            if (Nombre == 1)
+            {  //si le nombre = 1
 
                 return 1; // renvoie 1 comme resultat
 
+            }
             else // sinon
 
                 return Nombre + Somme(Nombre - 1); // calcule la somme en ajoutant l'entier actuel
