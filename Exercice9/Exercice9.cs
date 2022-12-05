@@ -17,7 +17,7 @@ namespace Exercice9
             {
                 Console.WriteLine("Admis");
             }
-            if (NoteConvertit >= 8) // si la note est supérieure à 8 et inférieur à 10
+            else if (NoteConvertit >= 8) // si la note est supérieure à 8 et inférieur à 10
             {
                 Console.WriteLine("Rattrapage");
             }
