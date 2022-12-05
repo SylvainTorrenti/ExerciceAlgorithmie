@@ -5,9 +5,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Exercice21
+namespace Exercice21_2
 {
-    internal class Exercice21
+    internal class Exercice21_2
     {
         static void Main(string[] args)
         {
@@ -15,28 +15,19 @@ namespace Exercice21
             Regex Var = new Regex("^[1-9]$|^1[0-2]");
             Console.WriteLine("Entrez un numero de mois");
             Mois = Console.ReadLine();
-            while (!(Var.IsMatch(Mois)))
+            do
             {
-                Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
-                Console.WriteLine("Entrez un mois valide!");
-                Console.WriteLine("Entrez un nouveau mois");
-                Mois = Console.ReadLine();
                 Console.WriteLine("Vous avez entrez " + Mois);
-            }
-            Console.WriteLine("Vous avez entrez " + Mois);
-            while (Var.IsMatch(Mois))
-            {
                 Console.WriteLine("Entrez un nouveau mois");
                 Mois = Console.ReadLine();
-                while (!(Var.IsMatch(Mois)))
+                if (!(Var.IsMatch(Mois)))
                 {
                     Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
                     Console.WriteLine("Entrez un mois valide!");
                     Mois = Console.ReadLine();
                 }
-                Console.WriteLine("Vous avez entrez " + Mois);
-            }
-
+            } while (Var.IsMatch(Mois));
+            
             Console.ReadLine();
         }
     }
