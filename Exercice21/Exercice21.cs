@@ -17,24 +17,29 @@ namespace Exercice21
             Mois = Console.ReadLine();
 
 
-            if (!(Var.IsMatch(Mois)))
+
+            while (!(Var.IsMatch(Mois)))
             {
                 Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
-
-                while (!(Var.IsMatch(Mois)))
-                {
-                    Console.WriteLine("Entrez un mois valide!");
-                    Mois = Console.ReadLine();
-                }
-            }
-            else 
-            {
+                Console.WriteLine("Entrez un mois valide!");
+                Mois = Console.ReadLine();
                 Console.WriteLine("Vous avez entrez " + Mois);
                 Console.WriteLine("Entrez un nouveau mois");
                 Mois = Console.ReadLine();
+                Console.WriteLine("Vous avez entrez " + Mois);
             }
 
-            
+            Console.WriteLine("Vous avez entrez " + Mois);
+
+            while (Var.IsMatch(Mois))
+            {
+
+                Console.WriteLine("Entrez un nouveau mois");
+                Mois = Console.ReadLine();
+                Console.WriteLine("Vous avez entrez " + Mois);
+            }
+
+
 
             Console.ReadLine();
         }
