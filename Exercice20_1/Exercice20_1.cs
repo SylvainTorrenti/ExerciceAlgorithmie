@@ -19,7 +19,7 @@ namespace Exercice20_1
 
                 Nombre = int.Parse(System.Console.ReadLine()); // stock le nombre
 
-                Resultat = Somme(Nombre); // stock le resultat dans une variable
+                Resultat = Somme(Nombre); // stock le resultat dans une variable et effectue la methode
                 Console.WriteLine("La somme est de " + Resultat);
 
                 Console.WriteLine("Voulez vous faire un autre calcule? (O/N)");
