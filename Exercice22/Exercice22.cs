@@ -14,24 +14,25 @@ namespace Exercice22
             string Fizz = "Fizz";
             string Buzz = "Buzz";
             string FizzBuzz = "FizzBuzz ";
-            int Modulo3 = Nombre % 3;
-            int Modulo5 = Nombre % 5;
+
 
             while (Nombre <= 100)
             {
-                if (Modulo3 == 3)
-                {
-                    Console.WriteLine(Fizz);
-                }
-                if (Modulo5 == 5)
-                {
-                    Console.WriteLine(Buzz);
-                }
-                if ((Modulo3 == 3) && (Modulo5 == 5))
+                int Modulo3 = Nombre % 3;
+                int Modulo5 = Nombre % 5;
+                if ((Modulo3 == 0) && (Modulo5 == 0))
                 {
                     Console.WriteLine(FizzBuzz);
                 }
-                else
+                else if (Modulo3 == 0)
+                {
+                    Console.WriteLine(Fizz);
+                }
+                else if (Modulo5 == 0)
+                {
+                    Console.WriteLine(Buzz);
+                }
+                else if (!(Modulo3 == 0) && !(Modulo5 == 0))
                 {
                     Console.WriteLine(Nombre);
                 }

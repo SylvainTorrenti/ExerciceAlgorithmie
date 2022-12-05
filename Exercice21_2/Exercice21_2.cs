@@ -15,19 +15,27 @@ namespace Exercice21_2
             Regex Var = new Regex("^[1-9]$|^1[0-2]");
             Console.WriteLine("Entrez un numero de mois");
             Mois = Console.ReadLine();
-            do
+            if (true)
             {
-                Console.WriteLine("Vous avez entrez " + Mois);
-                Console.WriteLine("Entrez un nouveau mois");
-                Mois = Console.ReadLine();
                 if (!(Var.IsMatch(Mois)))
                 {
                     Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
                     Console.WriteLine("Entrez un mois valide!");
                     Mois = Console.ReadLine();
                 }
-            } while (Var.IsMatch(Mois));
-            
+                do
+                {
+                    Console.WriteLine("Vous avez entrez " + Mois);
+                    Console.WriteLine("Entrez un nouveau mois");
+                    Mois = Console.ReadLine();
+                   // if (!(Var.IsMatch(Mois)))
+                   // {
+                    //    Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
+                     //   Console.WriteLine("Entrez un mois valide!");
+                     //   Mois = Console.ReadLine();
+                   // }
+                } while (Var.IsMatch(Mois));
+            }
             Console.ReadLine();
         }
     }

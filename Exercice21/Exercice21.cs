@@ -12,10 +12,10 @@ namespace Exercice21
         static void Main(string[] args)
         {
             string Mois;
-            Regex Var = new Regex("^[1-9]$|^1[0-2]");
+            Regex Var = new Regex("^[1-9]$|^1[0-2]"); //definit la regex
             Console.WriteLine("Entrez un numero de mois");
-            Mois = Console.ReadLine();
-            while (!(Var.IsMatch(Mois)))
+            Mois = Console.ReadLine(); // stock le mois
+            while (!(Var.IsMatch(Mois))) //
             {
                 Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
                 Console.WriteLine("Entrez un mois valide!");
