@@ -34,7 +34,7 @@ namespace Exercice22
                 }
                 else if (!(Modulo3 == 0) && !(Modulo5 == 0)) // sinon verifie si le modulo 3 != 0 et le modulo 5 != 0
                 {
-                    Console.WriteLine(Nombre); //si la condition se verifie ecrit le nombre
+                    Console.WriteLine(Nombre); //si la condition se verifie ecrit le nombre 
                 }
                 Nombre = Nombre + 1;
             }
