@@ -13,7 +13,7 @@ namespace Exercice14
             Console.WriteLine("Entrez le nombre de photocopies faites");
             int NbPhotocopies = int.Parse(Console.ReadLine()); //Stock le nombre de photocopie
             double Prix1 = 1; // donne le prix des 10 premiére photocopies
-            double Prix2 = 2.6; // donne le prix des 10 suivantes
+            double Prix2 = 2.8; // donne le prix des 10 suivantes
 
             if (NbPhotocopies <= 10) // verifie si le nombre de photocopie est <= 10
             {
