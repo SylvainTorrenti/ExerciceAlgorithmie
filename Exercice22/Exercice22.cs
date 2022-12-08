@@ -39,6 +39,6 @@ namespace Exercice22
                 Nombre = Nombre + 1;
             }
             Console.ReadLine();
-        }
+        } 
     }
 }
