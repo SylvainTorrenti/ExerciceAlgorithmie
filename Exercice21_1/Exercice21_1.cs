@@ -23,8 +23,8 @@ namespace Exercice21_1
                     Console.WriteLine("Entrez un nouveau mois");
                     Mois = Console.ReadLine();
                 }               
-                else
-                {
+                else // si la condition precedente se verifie pas
+                { 
                     Console.WriteLine("Vous avez rentrez une mauvaise donnée!");
                     Console.WriteLine("Entrez un mois valide!");
                     Mois = Console.ReadLine();
