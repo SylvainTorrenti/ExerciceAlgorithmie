@@ -12,7 +12,7 @@ namespace Exercice1
         {
             string Nom = "Sylvain Torrenti"; //stock le nom
             int age = 32; // stock l'age
-            Console.WriteLine("Bonjour " + Nom + " tu as " + age + " ans"); // affiche le nom et l'âge
+            Console.WriteLine($"Bonjour {Nom} tu as {age} ans"); // affiche le nom et l'âge
 
 
             Console.ReadLine();

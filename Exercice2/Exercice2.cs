@@ -10,12 +10,17 @@ namespace Exercice2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Rentrez un nombre"); 
-            string Nombre = Console.ReadLine(); // stock l'entrée en string
-            int NombreEntier = int.Parse(Nombre); // Transforme le string en int
-            int NombreCube = NombreEntier * NombreEntier * NombreEntier; // Calcul du cube
+            bool ParseOK;
+            int Nombre;
+            do
+            {
+                Console.WriteLine("Rentrez un nombre");
+                ParseOK = int.TryParse(Console.ReadLine(),out Nombre); // Transforme le string en int
+            } while (ParseOK==false);
+           
+            int NombreCube = Nombre * Nombre * Nombre; // Calcul du cube
 
-            Console.WriteLine("Le nombre au cube est " + NombreCube); // affichage du cube
+            Console.WriteLine($"Le nombre au cube est {NombreCube}"); // affichage du cube
 
             Console.ReadLine();
         }

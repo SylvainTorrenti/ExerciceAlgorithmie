@@ -10,13 +10,16 @@ namespace Exercice3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Entrez le rayon du cercle");
-            string Rayon = Console.ReadLine(); // Stock le rayon donné
-            int RayonEntier = int.Parse(Rayon); // Convertit le rayon de String a Int
-            int Diametre = RayonEntier * 2; // Calcul le diamétre
+            bool ParseOK;
+            int Rayon;
+            do
+            {
+                Console.WriteLine("Entrez le rayon du cercle");
+                ParseOK = int.TryParse(Console.ReadLine(), out Rayon); // Convertit le rayon de String a Int
+            } while (ParseOK == false);
+            int Diametre = Rayon * 2; // Calcul le diamétre
             double Perimetre = Diametre * Math.PI; // Calcul le perimetre
             Console.WriteLine("Le cercle de rayon " + Rayon + " a un périmétre égal à " + Perimetre); // affiche le resultat
-
             Console.ReadLine();
         }
     }

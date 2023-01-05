@@ -11,19 +11,27 @@ namespace Exercice7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Entrez un nombre");
-            String Nombre1 = Console.ReadLine(); //Stock le 1er nombre
-            int Nombre1Entier = int.Parse(Nombre1); // Convertit le 1er nombre
-            Console.WriteLine("Entrez un deuxiéme nombre");
-            string Nombre2 = Console.ReadLine(); //Stock le 2eme nombre
-            int Nombre2Entier = int.Parse(Nombre2); //Convertit le 2eme nombre
-            if (Nombre1Entier > Nombre2Entier) // Si le nombre 1 est plus grand
+            bool ParseOK;
+            int Nombre1;
+            int Nombre2;
+            do
             {
-                Console.WriteLine("Le premier nombre est plus grand " + Nombre1Entier);
+                Console.WriteLine("Entrez un nombre");
+                ParseOK = int.TryParse(Console.ReadLine(), out Nombre1); // Convertit le 1er nombre
+            } while (ParseOK == false);
+            do
+            {
+                Console.WriteLine("Entrez un deuxiéme nombre");
+                ParseOK = int.TryParse(Console.ReadLine(), out Nombre2); //Convertit le 2eme nombre
+            } while (ParseOK == false);
+
+            if (Nombre1 > Nombre2) // Si le nombre 1 est plus grand
+            {
+                Console.WriteLine("Le premier nombre est plus grand ");
             }
             else // Si le nombre 2 est plus grand
             {
-                Console.WriteLine("Le second nombre est plus grand " + Nombre2Entier);
+                Console.WriteLine("Le second nombre est plus grand ");
             }
             Console.ReadLine();
         }
